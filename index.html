@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Noto+Serif|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3ii.com/lib/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/libs/css/bootstrap.css" rel="stylesheet">
+     <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/libs/js/bootstrap.min.js"></script>
+    <script src="assets/js/style.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!-- BEGIN HEADER -->
+    <header>
+      <div class="header-block1">
+        <span class="header-block1__span"><i class="fa fa-truck"></i> Доставка по Минску бесплатно!</span>
+        <span class="header-block1__span"><i class="fa fa-tags"></i> Цены ниже рыночных!</span>
+        <span class="header-block1__span"><i class="fa fa-check"></i> Все в наличии!</span>
+        <span class="header-block1__span_flex-grow-3">Пн-Вс 9.00-18.00</span>
+        <span class="header-block1__span">Найти <i class="fa fa-search"></i> &#10072; <i class="fa fa-user"></i></span>
+      </div>
+      <div class="header-block2">
+        <span class="header-block2__span_flex-grow-4">ЛОГО КОМПАНИИ</span>
+        <span title="Велком" class="header-block2__span mobo-velcom-24">&nbsp;+37529 333 33 33</span>
+        <span title="Life" class="header-block2__span mobo-life-24">&nbsp;+37525 333 33 33</span>
+        <span title="МТС" class="header-block2__span mobo-mts-24">&nbsp;+37533 333 33 33</span>
+        <button type="button" class="header-block2__button" id="button-callback">Заказать звонок</button>
+        <form id="header__form-callback_hidden">
+          <span id="form-close">x</span>
+          <input type="text" pattern="^[А-Яа-яЁё\s]+$" name="login" placeholder="Ваше имя*" required/>
+          <input type="tel" pattern="^[ 0-9]+$" placeholder="Ваш номер телефона*" required/><br>
+          <input type="submit" value="отправить">
+        </form>
+      </div>
+      <div class="header-block3 container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#shipping">Оплата и доставка</a></li>
+                <li><a href="#refund">Гарантия и возврат</a></li>
+                <li><a href="#vacancy">Вакансии</a></li>
+                <li><a href="#contact">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+        <!-- END HEADER -->
+
+        <!-- BEGIN MAIN CONTENT -->
+    <main>
+        
+      <section class="section1">
+        <article class="section1__article_bg">
+          <h1 class="section1__article_title-center">Контакты</h1>
+          <p class="section1__article_text-center">Мы всегда на связи!</p>
+        </article>
+      </section>
+        
+      <section class="section2">
+        <div class="block-contact container">
+          <div class="row">
+            <div class="col-md-6">
+              <a>Главная</a>
+              <span>&#62;</span>
+              <a>Контакты</a>
+              <h2>Свяжитесь с нами любым удобным способом:</h2>
+              <ul class="block-contact__list">
+                <li><i class="fa fa-phone"></i>Оптовый отдел +375-29-391-91-28</li>
+                <li><i class="fa fa-phone"></i>Телефон для связи в России  +375-29-391-91-28</li>
+                <li><i class="fa fa-skype"></i>autostrong-minsk</li>
+                <li><i class="fa fa-envelope"></i> autostrong@yandex.ru</li>
+              </ul>
+              <h2>Информационное сотрудничество</h2>
+              <span><i class="fa fa-phone"></i> +375 29 333 33 33(Velcom)</span>
+              <h2>Оптовое сотрудничество</h2>
+              <span><i class="fa fa-phone"></i> +375 29 333 33 33(Velcom)</span>
+            </div>
+            <div class="col-md-6">
+              <form>
+                <h3>Есть вопросы или предложения?</h3>
+                <p>Пишите нам в любое время!</p>
+                <input type="text" pattern="^[А-Яа-яЁё\s]+$" name="login" placeholder="Ваше имя*" required/>
+                <input type="email" name="email" required placeholder="Ваш email*">
+                <input type="tel" pattern="^[ 0-9]+$" placeholder="Ваш номер телефона*" required/><br>
+                <textarea name="comment" rows="6" placeholder="Ваше сообщение"></textarea>
+                <input type="submit" value="отправить">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+      <section class="section3">
+        <div class="section3__block-address container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Торговые места:</h2>
+              <p><a><i class="fa fa-map-marker-alt"></i></a>№33/3</p>
+              <p><i class="fa fa-phone"></i>+375 44 333 33 33(Velcom)<br>+375 44 333 33 33(Velcom)</p>
+              <p><i class="fa fa-clock"></i>Вт-Вс</p>
+              <p>с 9-00 до 16-00</p>
+            </div>
+            <div class="col-md-4">
+              <h2>Основной склад и магазин:</h2>
+                <p><a><i class="fa fa-map-marker-alt"></i></a>г.Минск, ул.Ивановская, 0</p>
+                <p><i class="fa fa-phone"></i>+375 29 333 33 33(Velcom)<br>+375 29 333 33 33(Velcom)<br>+375 29 333 33 33(Velcom)</p>
+                <p><i class="fa fa-clock"></i>Пн-Вс</p>
+                <p>с 9-00 до 19-00</p>
+            </div>
+            <div class="col-md-4">
+              <h2>Юридический адрес:</h2>
+              <p><a><i class="fa fa-map-marker-alt"></i></a>220089 РБ г.Минск <br> ул.Ивановская, 0</p>
+              <h2>Наши реквизиты:</h2>
+            </div>
+          </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1175.54740938749!2d27.58490836335406!3d53.894518616491325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfcb441c1865%3A0x9b715d1983a9a103!2z0YPQu9C40YbQsCDQmNCy0LDQvdC-0LLRgdC60LDRjywg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1530276665105" ></iframe>
+      </section>
+    </main>
+    <!-- END MAIN CONTENT -->
+
+    <!--BEGIN FOOTER  -->
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">ЛОГО КОМПАНИИ</div>
+          <div class="footer__nav container-fluid">
+             <div class="row">
+                <div class="col-md-2"><a>Каталог</a></div>
+                <div class="col-md-2"><a>О нас</a></div>
+                <div class="col-md-2"><a>Доставка и оплата</a></div>
+                <div class="col-md-2"><a>Гарантия и возврат</a></div>
+                <div class="col-md-2"><a>Вакансии</a></div>
+                <div class="col-md-2"><a>Контакты</a></div>
+             </div>
+          </div>
+          <div class="footer__icon">
+            <a><i class="fa fa-skype"></i></a>
+            <a><i class="fa fa-envelope"></i></a>
+            <a><i class="fa fa-phone"></i></a>
+          </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+ </div>
+</body>
+</html>

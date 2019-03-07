@@ -1,0 +1,307 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address,  img,  article, aside,  figure, figcaption, footer, header, hgroup, menu, nav, output,  section
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+    outline: none
+    box-sizing: border-box
+
+html
+    position: relative
+    min-height: 100%
+body
+    margin-bottom: auto
+    max-width: 1900px
+    margin: auto
+    
+$roboto: 'Roboto', sans-serif
+$textstyle: uppercase
+header
+    width: 100%
+    position: sticky
+    top: 0
+    z-index: 10
+    
+%flex-base
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: baseline 
+    
+.header-block1
+    width: 100%
+    background-color: #2c3e50
+    color: #fff
+    padding: 10px 4% 8px 6%
+    font:
+        size: 14px
+        family: $roboto
+    @extend %flex-base
+    &__span
+        flex-grow: 1
+        &_flex-grow-3
+            flex-grow: 4
+            text-align: center
+%fa-base
+    font-size: 22px
+    margin:
+        left: 5px
+        right: 5px
+.fa-truck,
+.fa-tags,
+.fa-search,
+.fa-user,
+.fa-check
+    @extend %fa-base
+    
+.fa-tags
+    transform: scale(-1,1)
+    
+.header-block2
+    width: 100%
+    max-width: 1900px
+    margin: auto
+    background-color: #fff
+    color: #808080
+    padding: 22px 6% 28px 6.2%
+    font:
+        size: 18px
+        family: $roboto
+    @extend %flex-base
+    &__span
+        flex-grow: 1
+        font-weight: bolder
+        &_flex-grow-4
+            flex-grow: 4
+            text-align: left
+            color: #000
+            font:
+                weight: bold
+                size: 25px
+            letter-spacing: 2px
+    &__button
+        margin-left: -10px
+        background-color: #2980b9
+        color: #fff
+        font-size: 14px
+        padding: 8px 20px
+        box-shadow: inset 0 0 10px #696969
+        border: none
+            radius: 6px
+#header__form-callback_hidden
+    display: none
+    z-index: 22
+    color: #fff
+    #form-close
+        float: right
+[class*=mobo-]
+    text-indent: 5px
+    background-position: 0 0
+    background-repeat: no-repeat
+    display: inline-block
+    vertical-align: middle
+    margin-right: 3px
+    
+.mobo-mts-24
+    line-height: 24px
+    padding-left: 24px
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB5klEQVRIS7XWOUsDQRTA8X+iMeyqhYWQNGpjPMDGRlARxEI7S/EDiIjpFC09eo/GNCKkM22CRVBBLSKWCSIiCoIHJoVHIR4gWXkuipJkZ0f0NQu7s+83b65dj1VTY/H0BF4vfxr5PJgmHsswLJ6f/zT3VzLD0ACam6GrGypN2E9BOgNvb84dcwWUlcH0FITDEAiCxwMPDxCP2/ceH0sjroDwOCwsQkVFYaK1NRt5eSmOKIHBQVhfB8Mo3cu5WZid+wUQCMDODsjYO8XNDfT3w+FhYSvHCkZGIBKB8nJnwLJgdRVGRzUAvx/SaXXvP1PKHDSF4OLyJ1KyAik5mdTbGzMzMD/vApBluLICY2N6wMEB9PXxcSp8RtEKqqpgexs6OvSAszPo7YWrKwUQDMLuLoRCekAuZwPHxwqgocEG6uv1ANndAsjicBwiSSyAQDpxf28DmYwCqK21gdZWnfRwfW0Dp6cKwOeDRAIGBvQA2ckC3N4qAHk8NASxmB6wtAwTE2DlXQDSZG8PenrcIdkstLeDnEvfw/EsamuDjQ2oq3NG7u5geBg2NwvbKY/rxkaIRkGw6uqfCV5f4eQEJidha6t4J5SAvGaa0NICnZ32Vb5w5+eQSsHREUgFpcIV4G4WHCr459+Wd4vK37n52fr0AAAAAElFTkSuQmCC)
+    
+.mobo-life-24
+    line-height: 24px
+    padding-left: 24px
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACtklEQVRIS7XV20sUYRjH8e87U2276njcVCgPHYywrsL+gUi6iSAoSVaNxOxgBVGhnQQLuqnoQFFQhJZWagUJgQSFFBHSVXS2IrtQ0XbNHdt23Z15Y2cJhFpzYnuvhmHe+czvmXmeEd65CyX/cQlbgBC4DuxHLV5C8PJVwg97/vpo9gDAUV6G61gjkd7njNfuRI6NTYnYBpS8eaTcaEZoGuM124k8600sgMNB8vnTzCpdSbCllcCRo2CacRHbCRACxyYPSU1HML0+xkrXIIeH/w1QFhQyc0UJ0jAASfjJU+TAEDNKlqN1toGiMF5bx8T97n8Aok9aUU7SsUZrs5wIo0dr/qgHpbAA7V4HSlparExNxyEU+iMSv0RRYMtmkg7Vx4BQCL16G5Gexyi5OaR0tqLm5RF5+Qq9qgY5PGIfmLl6FY61a8A0kIZJ8MIljDfvEO4stFvXUBctxBwcwr/Bg/m53yYwxccnsjLRbragLi7C9HrR13sw+j4kEJicwOeLAe/7EgjkZKO1t6IW5lsJrBK9T2ACpSAf7e4tlKxMjIFB9CjQ/8VmAiHA5UQIBWRs4MpAwDpWly0ltes2qArh6Eyq2Y70jdoDxBw3roZ9KBnp1sZo1waOHkeOfmPWurUknzlhnQ+cPE3w3EWwmvH3FbcPrGZqv46Sk23tMj5+smotR0dxNR5kdpUHGYmgl1VYkzXeig8smI/WcR3F7Y4BfR/wr/eAESGlrZkZy4qJvHiJvrES6dftAyItDceGdaCqIBSk30+o8w5qUREp164gUlP5ceoMwbMXpugYsD1NZ+/egXPPLuTIV/TKaozXbxMHiIx0Uru7rPcS6rzL9/rDcYfcL3X6CYTAuX8PzrqtmCNf8ZdVYMYZD5MjTRuI/iKdDXtRcnMJdz8gdKN9ytLYTzCt2/1+0U9QxTVIly5H+gAAAABJRU5ErkJggg==)
+.mobo-velcom-24
+    line-height: 24px
+    padding-left: 24px
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB1klEQVRIS8WUvUoDQRSFz52JP4FNIRbRVhCfQmKlvoBgOhUbFZ9G1E7TGUhnoWAT0JcQBNsomggaY2B/rswmm2x2ZocNoqZczp7znXvvhvDLP/plf/xPAHf3Vz0PmHBObrI05CZWlY5moem1Bu7HXkkSXTAAIWmT8se3thB+QQkCoZ4ENmkGI/qRAEXOHioMmu+ZciMAttKacBNrzKiAaC7SE7AVbzIIGJJH5hE3N0xN+A0l9lEdmg/18SZhgE6eHMpoE51c10dNKJ3cEMJcznmnMJMbQtRO/M+DMzC2s1xL4Dbv4FYhJS1n0TPzOXF7t+hjqkrAivVa3Fbjq3XpAB3kC2gLif4hmN8i4jpclHs7CEMmKwRaN8kDr/XQbV7OcdAphPcu8DFdwJOUWDTpCXwND9tUxPPgitKacJ88Mo8MVYipyYC8iOcQJk6QbJIkT9Imm8TJByDa7vs7gdtaUjNPkptCVBOZ4/tw5n3y1IBoJ53X2pHvvm9kuRYSXHMcHCbNtRHFzdqPKAbqSwVZrwvgupAoOwu9mWsNbYQqxPeRel0gvhICO2nm1gZRcHoTO7l1B8lWWpMM5GMFKLEKYb/3v2+b+Vg7MDVRz2wz/1FAlpP984BvvV77yxygdBgAAAAASUVORK5CYII=)
+
+.header-block3.container
+    width: 100%
+    padding: 0
+    .navbar.navbar-inverse
+        background-color: #2980b9
+        border: none
+        height: auto
+        .container
+            margin-left: 4%
+            a
+                padding: 15px 18px 10px 18px
+                color: #fff
+                font:
+                    family: $roboto
+                    size: 14px
+                text-transform: $textstyle
+                border:
+                    left: 1px solid #4690c1
+                    right: 1px solid #4690c1
+.section1__article_bg
+    height: 340px
+    background: url(../img/bg4.jpg) no-repeat center
+    background-color: rgba(4,60,96,.7)
+    background-blend-mode: darken
+    text-align: center
+    color: #fff
+.section1__article_title-center
+    margin: 0
+    padding-top: 120px
+    text-transform: $textstyle
+    font:
+        family: 'Roboto Slab', serif
+        weight: bold
+    letter-spacing: 1px
+.section1__article_text-center
+    padding-top: 20px
+    font:
+        size: 22px
+        family: Arial
+    letter-spacing: 1px
+form
+    padding: 40px
+    margin-top: -60px
+    background-color: #2c3e50
+    color: #fff
+    z-index: -1
+    h3
+        @extend %form-base
+        font-size: 25px
+    p
+        @extend %form-base
+        font-size: 18px
+%form-base
+    font:
+        family: 'Noto Serif', serif
+        weight: bolder
+    letter-spacing: 1px
+
+input:not([type=submit])
+    width: 100%
+    display: block
+    background: none
+    border: 1px solid #959595
+    margin:
+        top: 15px
+        bottom: 15px
+    padding: 10px 
+    
+input:nth-of-type(1)
+    margin-top: 30px
+textarea
+    background: none
+    width: 100%
+    padding: 10px 
+[type=submit]
+    background-color: #e2a000
+    margin-top: 15px
+    border-radius: 4px
+    border: none
+    padding: 10px 30px
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 1.3px
+h2
+    width: 60%
+    font:
+        family: 'Noto Serif', serif
+        size: 20px
+        weight: bold
+    padding:
+            top: 14px
+            bottom: 14px
+    line-height: 1.5
+        
+.block-contact__list
+    list-style: none
+    margin-left: 0
+    padding-left: 0
+li, span
+    margin-bottom: 14px
+    font:
+        family: 'Lato', sans-serif
+        size: 15px
+        weight: bold
+.fa-map-marker-alt,
+.fa-phone,
+.fa-skype,
+.fa-envelope,
+.fa-clock
+        color: #2980b9
+        font-size: 20px
+        margin-right: 4px
+.section3
+    background: #eaecee
+    margin-top: 10px
+    &__block-address
+        padding-top: 20px
+        h2
+            font:
+                family: 'Noto Serif', serif
+                weight: bolder
+                size: 14px
+            letter-spacing: 1px
+iframe
+    width: 100%
+    height: 600px
+    border: 0
+.footer
+    background: #2c3e50
+    color: #fff
+    height: auto
+    position: absolute
+    bottom: 0
+    width: 100%
+    max-width: 1900px
+    margin: auto
+    &__content
+        width: 80%
+        margin-left: 10%
+    &__logo
+        padding: 20px
+        color: #a0a7b0
+        border-bottom: 1px solid #a0a7b0
+        font-size: 22px
+    &__nav
+        padding: 20px
+        border-bottom: 1px solid #a0a7b0
+        color: #fff
+        a
+            color: #fff
+            font-size: 16px
+        a:hover
+            text-decoration: none
+    &__icon
+        padding: 20px
+        i
+            color: #fff
+            font-size: 18px
+
+@media only screen and (min-width : 320px) and (max-width : 768px)
+    %flex-base
+        display: flex
+        flex-direction: column
+    .block-contact container
+        h2
+            width: 100%
+    form
+        margin-top: 0
+        h3
+            font-size: 18px
+            
+@media only screen and (min-width : 768px) and (max-width : 1024px)
+    %flex-base
+        display: flex
+        flex-direction: column
+    .navbar.navbar-inverse
+        a
+            font-size: 10px
+            padding: 0
+            margin: 0
+    form
+        padding: 20px
+        margin-top: 0px
+     
+
+ 
